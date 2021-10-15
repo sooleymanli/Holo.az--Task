@@ -6,8 +6,7 @@
     box-sizing: border;
     font-family: 'Roboto', sans-serif;
 }
-
-header .desktop-header{
+.desktop-header{
     width: 100%;
     height: 84px;
     display: flex;
@@ -187,10 +186,10 @@ border-radius: 50%;
 
 
         @media only screen and (max-width:576px){
-            header .desktop-header{
+             .desktop-header{
                 display: none;
             }
-            header  .mobile-header{
+             .mobile-header{
                 display: flex;
             }
         }
