@@ -54,6 +54,30 @@ header .desktop-header{
     align-items: center;
 height:84px;
 }
+.right div{
+    border-bottom:2px solid transparent;
+    transition: 0.3s all ease-in-out;
+}
+.right div:hover{
+    border-bottom: 2px solid #F58634;
+
+
+   cursor: pointer;
+}
+.right div:hover span{
+
+   color:#F58634;
+   font-weight: bold;
+   
+}
+.right div:hover .count{
+    color:#fff;
+font-weight: 400;
+    
+ }
+.right div:hover svg{
+    stroke:#F58634 ;
+ }
 
 .right .shop-bag{
     display: flex;
