@@ -127,7 +127,7 @@ transform: translateX(-21px) translateY(4px);
             display: none;
             width: 100%;
             height: 57px;
-            padding: 15px 13px;
+            
             border-top: 1px solid #EDEDED;
             border-bottom: 1px solid #EDEDED;
         }
