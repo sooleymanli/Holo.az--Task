@@ -8,6 +8,46 @@
     <title>Header</title>
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="navbar.css">
+
+    <style>
+.dl-menu.dl-animate-out-1 {
+	animation: MenuAnimOut1 0.4s linear forwards;
+}
+
+@keyframes MenuAnimOut1 {
+	50% {
+		transform: translateZ(-250px) rotateY(30deg);
+	}
+	75% {
+		transform: translateZ(-372.5px) rotateY(15deg);
+		opacity: .5;
+	}
+	100% {
+		transform: translateZ(-500px) rotateY(0deg);
+		opacity: 0;
+	}
+}
+
+.dl-menu.dl-animate-in-1 {
+	animation: MenuAnimIn1 0.3s linear forwards;
+}
+
+@keyframes MenuAnimIn1 {
+	0% {
+		transform: translateZ(-500px) rotateY(0deg);
+		opacity: 0;
+	}
+	20% {
+		transform: translateZ(-250px) rotateY(30deg);
+		opacity: 0.5;
+	}
+	100% {
+		transform: translateZ(0px) rotateY(0deg);
+		opacity: 1;
+	}
+}
+
+    </style>
 </head>
 
 <body>
@@ -111,121 +151,7 @@
         <div class="navbar">
             <div class="navbar-body">
                
-                <div class="navbar-item">
-                    <a href="#">Televizor</a>
-                    <div class="popup">
-                        <div class="categories">
-                            <div class="categories-item">
-                                <div class="categories-item-img">
-                                    <img src="img/refurb-iphone-xs-spacegray 19.png" alt="Img" >
-                                </div>
-                                <div class="categories-item-text">
-                                    <div class="main-category"><a href="#">Televizyon</a><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M15 12.5C15.2761 12.5 15.5 12.2761 15.5 12C15.5 11.7239 15.2761 11.5 15 11.5V12.5ZM4 11.5C3.72386 11.5 3.5 11.7239 3.5 12C3.5 12.2761 3.72386 12.5 4 12.5V11.5ZM15 11.5L4 11.5V12.5L15 12.5V11.5Z" fill="#F58634"/>
-                                        <path d="M19.7142 11.8285L15.3029 9.18174C15.1696 9.10176 15 9.19778 15 9.35324V14.6468C15 14.8022 15.1696 14.8982 15.3029 14.8183L19.7142 12.1715C19.8436 12.0938 19.8436 11.9062 19.7142 11.8285Z" fill="#F58634"/>
-                                        </svg>
-                                    </div>
-                                    <div class="sub-categories">
-                                        <a href="#">LG</a>,
-                                        <a href="#">Neos</a>,
-                                        <a href="#">Samsung</a>,
-                                        <a href="#">Skyworth</a>,
-                                        <a href="#">Sony</a>,
-                                        <a href="#">Arçelik</a>,
-                                        <a href="#">Zimmer</a>,
-                                        <a href="#">Sunny</a>,
-                                        <a href="#">Panasonic</a>,
-                                        <a href="#">JVC</a>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="categories-item">
-                                <div class="categories-item-img">
-                                    <img src="img/refurb-iphone-xs-spacegray 20.png" alt="Img" >
-                                </div>
-                                <div class="categories-item-text">
-                                    <div class="main-category"><a href="#">Televizyon</a><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M15 12.5C15.2761 12.5 15.5 12.2761 15.5 12C15.5 11.7239 15.2761 11.5 15 11.5V12.5ZM4 11.5C3.72386 11.5 3.5 11.7239 3.5 12C3.5 12.2761 3.72386 12.5 4 12.5V11.5ZM15 11.5L4 11.5V12.5L15 12.5V11.5Z" fill="#F58634"/>
-                                        <path d="M19.7142 11.8285L15.3029 9.18174C15.1696 9.10176 15 9.19778 15 9.35324V14.6468C15 14.8022 15.1696 14.8982 15.3029 14.8183L19.7142 12.1715C19.8436 12.0938 19.8436 11.9062 19.7142 11.8285Z" fill="#F58634"/>
-                                        </svg>
-                                    </div>
-                                    <div class="sub-categories">
-                                        <a href="#">LG</a>,
-                                        <a href="#">Neos</a>,
-                                        <a href="#">Samsung</a>,
-                                        <a href="#">Skyworth</a>,
-                                        <a href="#">Sony</a>,
-                                        <a href="#">Arçelik</a>,
-                                        <a href="#">Zimmer</a>,
-                                        <a href="#">Sunny</a>,
-                                        <a href="#">Panasonic</a>,
-                                        <a href="#">JVC</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            
-
-                            <div class="categories-item">
-                                <div class="categories-item-img">
-                                    <img src="img/samsung-43-led-smart-tv-4k-uhd-ue43tu7540uxru_1-1 17.png" alt="Img" >
-                                </div>
-                                <div class="categories-item-text">
-                                    <div class="main-category"><a href="#">Televizyon</a><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M15 12.5C15.2761 12.5 15.5 12.2761 15.5 12C15.5 11.7239 15.2761 11.5 15 11.5V12.5ZM4 11.5C3.72386 11.5 3.5 11.7239 3.5 12C3.5 12.2761 3.72386 12.5 4 12.5V11.5ZM15 11.5L4 11.5V12.5L15 12.5V11.5Z" fill="#F58634"/>
-                                        <path d="M19.7142 11.8285L15.3029 9.18174C15.1696 9.10176 15 9.19778 15 9.35324V14.6468C15 14.8022 15.1696 14.8982 15.3029 14.8183L19.7142 12.1715C19.8436 12.0938 19.8436 11.9062 19.7142 11.8285Z" fill="#F58634"/>
-                                        </svg>
-                                    </div>
-                                    <div class="sub-categories">
-                                        <a href="#">LG</a>,
-                                        <a href="#">Neos</a>,
-                                        <a href="#">Samsung</a>,
-                                        <a href="#">Skyworth</a>,
-                                        <a href="#">Sony</a>,
-                                        <a href="#">Arçelik</a>,
-                                        <a href="#">Zimmer</a>,
-                                        <a href="#">Sunny</a>,
-                                        <a href="#">Panasonic</a>,
-                                        <a href="#">JVC</a>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div class="categories-item">
-                                <div class="categories-item-img">
-                                    <img src="img/samsung-43-led-smart-tv-4k-uhd-ue43tu7540uxru_1-1 18.png" alt="Img" >
-                                </div>
-                                <div class="categories-item-text">
-                                    <div class="main-category"><a href="#">Televizyon</a><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M15 12.5C15.2761 12.5 15.5 12.2761 15.5 12C15.5 11.7239 15.2761 11.5 15 11.5V12.5ZM4 11.5C3.72386 11.5 3.5 11.7239 3.5 12C3.5 12.2761 3.72386 12.5 4 12.5V11.5ZM15 11.5L4 11.5V12.5L15 12.5V11.5Z" fill="#F58634"/>
-                                        <path d="M19.7142 11.8285L15.3029 9.18174C15.1696 9.10176 15 9.19778 15 9.35324V14.6468C15 14.8022 15.1696 14.8982 15.3029 14.8183L19.7142 12.1715C19.8436 12.0938 19.8436 11.9062 19.7142 11.8285Z" fill="#F58634"/>
-                                        </svg>
-                                    </div>
-                                    <div class="sub-categories">
-                                        <a href="#">LG</a>,
-                                        <a href="#">Neos</a>,
-                                        <a href="#">Samsung</a>,
-                                        <a href="#">Skyworth</a>,
-                                        <a href="#">Sony</a>,
-                                        <a href="#">Arçelik</a>,
-                                        <a href="#">Zimmer</a>,
-                                        <a href="#">Sunny</a>,
-                                        <a href="#">Panasonic</a>,
-                                        <a href="#">JVC</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="photo">
-                            <img src="img/Rectangle 4380.png" alt="">
-                        </div>
-                    </div>
-                </div>
+        
 
 
                 <div class="navbar-item">
@@ -354,9 +280,43 @@
     </div>
 
 
+
+
+
+    <div id="dl-menu" class="dl-menuwrapper">
+        <button class="dl-trigger">Open Menu</button>
+        <ul class="dl-menu">
+            <li>
+                <a href="#">Item 1</a>
+                <ul class="dl-submenu">
+                    <li><a href="#">Sub-Item 1</a></li>
+                    <li><a href="#">Sub-Item 2</a></li>
+                    <li><a href="#">Sub-Item 3</a></li>
+                    <li>
+                        <a href="#">Sub-Item 4</a>
+                        <ul class="dl-submenu">
+                            <li><a href="#">Sub-Sub-Item 1</a></li>
+                            <li><a href="#">Sub-Sub-Item 2</a></li>
+                            <li><a href="#">Sub-Sub-Item 3</a></li>
+                        </ul>
+                    </li>
+                    <li><!-- ... --></li>
+                    <!-- ... -->
+                </ul>
+            </li>
+            <li><!-- ... --></li>
+            <li><!-- ... --></li>
+            <!-- ... -->
+        </ul>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <script>
+$(document).ready(()=>{
 
-
+$( '#dl-menu' ).dlmenu({
+	animationClasses : { classin : 'animation-class-name', classout : 'animation-class-name' }
+});
+})
     </script>
 </body>
 
