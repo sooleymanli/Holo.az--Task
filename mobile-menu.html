@@ -16,8 +16,7 @@
 </head>
 <body>
     <button id="menu">Menu</button>
-    <button id="menu2">Menu 2</button>
-    <button id="menu3">Menu 3</button>
+
     <div class="mobile-menu">
         <div class="mobile-menu-body">
             <div class="signin-menu">
@@ -25,7 +24,7 @@
                     <path d="M11.5657 21.3478L11.495 20.8528L11.5657 21.3478ZM7.6896 21.2049L8.0172 20.8272L7.6896 21.2049ZM20.2664 19.3637L20.6441 19.6913L20.2664 19.3637ZM20.2664 4.63628L19.8886 4.96388L20.2664 4.63628ZM11.495 3.14722L15.7778 3.75905L15.9192 2.7691L11.6364 2.15727L11.495 3.14722ZM20.5 9.20377V14.7962H21.5V9.20377H20.5ZM15.7778 20.2409L11.495 20.8528L11.6364 21.8427L15.9192 21.2309L15.7778 20.2409ZM7.5 7.13193V6.61204H6.5V7.13193H7.5ZM7.5 17.388V17.066H6.5V17.388H7.5ZM11.495 20.8528C10.4178 21.0067 9.66249 21.1134 9.08872 21.1144C8.52909 21.1154 8.23244 21.0138 8.0172 20.8272L7.362 21.5826C7.83635 21.994 8.41558 22.1156 9.09051 22.1144C9.7513 22.1132 10.5892 21.9923 11.6364 21.8427L11.495 20.8528ZM6.5 17.388C6.5 18.4458 6.49882 19.2924 6.5911 19.9467C6.68535 20.615 6.88764 21.1712 7.362 21.5826L8.0172 20.8272C7.80196 20.6405 7.65945 20.3612 7.5813 19.807C7.50118 19.2389 7.5 18.476 7.5 17.388H6.5ZM20.5 14.7962C20.5 16.0498 20.4991 16.9431 20.4122 17.6305C20.3272 18.304 20.166 18.7163 19.8886 19.0361L20.6441 19.6913C21.1003 19.1653 21.306 18.5344 21.4044 17.7558C21.5009 16.9912 21.5 16.0237 21.5 14.7962H20.5ZM15.9192 21.2309C17.1344 21.0573 18.0923 20.9214 18.8356 20.7177C19.5924 20.5102 20.1879 20.2174 20.6441 19.6913L19.8886 19.0361C19.6112 19.356 19.2259 19.5738 18.5712 19.7532C17.903 19.9364 17.0188 20.0637 15.7778 20.2409L15.9192 21.2309ZM15.7778 3.75905C17.0188 3.93633 17.903 4.06358 18.5712 4.24676C19.2259 4.42621 19.6112 4.64403 19.8886 4.96388L20.6441 4.30868C20.1879 3.78264 19.5924 3.48979 18.8356 3.28234C18.0923 3.0786 17.1344 2.9427 15.9192 2.7691L15.7778 3.75905ZM21.5 9.20377C21.5 7.97627 21.5009 7.00876 21.4044 6.24418C21.306 5.46562 21.1003 4.83472 20.6441 4.30868L19.8886 4.96388C20.166 5.28373 20.3272 5.69604 20.4122 6.3695C20.4991 7.05692 20.5 7.95021 20.5 9.20377H21.5ZM11.6364 2.15727C10.5892 2.00767 9.7513 1.88678 9.09051 1.88559C8.41558 1.88438 7.83635 2.00598 7.362 2.41738L8.0172 3.17284C8.23244 2.98616 8.52909 2.88459 9.08872 2.88559C9.66249 2.88662 10.4178 2.99334 11.495 3.14722L11.6364 2.15727ZM7.5 6.61204C7.5 5.52396 7.50118 4.76112 7.5813 4.19297C7.65945 3.63882 7.80196 3.35951 8.0172 3.17284L7.362 2.41738C6.88764 2.82879 6.68535 3.385 6.5911 4.05332C6.49882 4.70764 6.5 5.55422 6.5 6.61204H7.5Z" fill="#F58634"/>
                     <path d="M16 12L16.3904 11.6877L16.6403 12L16.3904 12.3123L16 12ZM4 12.5C3.72386 12.5 3.5 12.2761 3.5 12C3.5 11.7239 3.72386 11.5 4 11.5V12.5ZM12.3904 6.68765L16.3904 11.6877L15.6096 12.3123L11.6096 7.31235L12.3904 6.68765ZM16.3904 12.3123L12.3904 17.3123L11.6096 16.6877L15.6096 11.6877L16.3904 12.3123ZM16 12.5H4V11.5H16V12.5Z" fill="#F58634"/>
                     </svg>
-                    <span>Hesaba daxil ol</span>
+                    <a href="#" class="account-zindex" onclick="showAccountDiv()">Hesaba daxil ol</a>
                     </div>
                 <div class="mobile-menu-right">
                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37,26 +36,146 @@
             </div>
 
 
+<div class="account-links-list">
+    <div class="account-links-list-body">
+
+
+        <div class="signin-menu">
+            <div class="mobile-menu-left">
+                <svg  onclick="hideAccountDiv()"  width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.5 8L1.14645 8.35355L0.792893 8L1.14645 7.64645L1.5 8ZM8.14645 15.3536L1.14645 8.35355L1.85355 7.64645L8.85355 14.6464L8.14645 15.3536ZM1.14645 7.64645L8.14645 0.646446L8.85355 1.35355L1.85355 8.35355L1.14645 7.64645Z" fill="#2D2D2D"/>
+                    </svg>
+                    
+                <a href="#" class="account-zindex">Menyuya qayıt</a>
+                </div>
+            <div class="mobile-menu-right">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 6L6 22" stroke="#2D2D2D" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 6L22 22" stroke="#2D2D2D" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
+                </div>
+        </div>
+
+
+        <div class="mobile-account-user-name">
+          <span>Salam, <strong>Gunel Mmdv</strong></span>
+        </div>
+
+
+        <div class="mobile-account-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.7274 20.4471C19.2716 19.1713 18.2672 18.0439 16.8701 17.2399C15.4729 16.4358 13.7611 16 12 16C10.2389 16 8.52706 16.4358 7.12991 17.2399C5.73276 18.0439 4.72839 19.1713 4.27259 20.4471" stroke="#2D2D2D" stroke-linecap="round"/>
+                <circle cx="12" cy="8" r="4" stroke="#2D2D2D" stroke-linecap="round"/>
+                </svg>
+<a href="#">Şəxsi məlumatlarım</a>                
+        </div>
+
+
+
+        <div class="mobile-account-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="5" y="4" width="14" height="17" rx="2" stroke="#2D2D2D"/>
+                <path d="M9 9H15" stroke="#2D2D2D" stroke-linecap="round"/>
+                <path d="M9 13H15" stroke="#2D2D2D" stroke-linecap="round"/>
+                <path d="M9 17H13" stroke="#2D2D2D" stroke-linecap="round"/>
+                </svg>
+                
+<a href="#">Sifarişlərim</a>                
+        </div>
+
+
+        <div class="mobile-account-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.398 19.804L12.6283 20.2478L12.398 19.804ZM11.602 19.804L11.3717 20.2478H11.3717L11.602 19.804ZM18.5 11C18.5 13.327 17.3141 15.2164 15.9 16.6426C14.4865 18.0684 12.8868 18.9872 12.1678 19.3601L12.6283 20.2478C13.3922 19.8516 15.0935 18.8765 16.6102 17.3467C18.1264 15.8173 19.5 13.6894 19.5 11H18.5ZM12 4.5C15.5899 4.5 18.5 7.41015 18.5 11H19.5C19.5 6.85786 16.1421 3.5 12 3.5V4.5ZM5.5 11C5.5 7.41015 8.41015 4.5 12 4.5V3.5C7.85786 3.5 4.5 6.85786 4.5 11H5.5ZM11.8322 19.3601C11.1132 18.9872 9.51351 18.0684 8.09996 16.6426C6.68593 15.2164 5.5 13.327 5.5 11H4.5C4.5 13.6894 5.87358 15.8173 7.38981 17.3467C8.9065 18.8765 10.6078 19.8516 11.3717 20.2478L11.8322 19.3601ZM12.1678 19.3601C12.0593 19.4164 11.9407 19.4164 11.8322 19.3601L11.3717 20.2478C11.769 20.4538 12.231 20.4538 12.6283 20.2478L12.1678 19.3601ZM14.5 11C14.5 12.3807 13.3807 13.5 12 13.5V14.5C13.933 14.5 15.5 12.933 15.5 11H14.5ZM12 8.5C13.3807 8.5 14.5 9.61929 14.5 11H15.5C15.5 9.067 13.933 7.5 12 7.5V8.5ZM9.5 11C9.5 9.61929 10.6193 8.5 12 8.5V7.5C10.067 7.5 8.5 9.067 8.5 11H9.5ZM12 13.5C10.6193 13.5 9.5 12.3807 9.5 11H8.5C8.5 12.933 10.067 14.5 12 14.5V13.5Z" fill="#2D2D2D"/>
+                </svg>
+                
+<a href="#">Ünvanlarım</a>               
+        </div>
+
+
+        <div class="mobile-account-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.9124 13.8579L11.4328 20.0342C11.6421 20.2324 11.7468 20.3316 11.8678 20.3646C11.9541 20.3882 12.0451 20.3882 12.1314 20.3646C12.2524 20.3316 12.357 20.2324 12.5663 20.0342L12.5663 20.0342L19.0868 13.8579C20.9039 12.1367 21.1249 9.32011 19.5986 7.33649L19.2885 6.93343C17.4524 4.54717 13.7429 4.94513 12.4547 7.66658C12.2729 8.05074 11.7263 8.05074 11.5444 7.66658C10.2563 4.94513 6.54677 4.54717 4.71066 6.93343L4.40052 7.33649C2.87423 9.32011 3.09531 12.1367 4.9124 13.8579Z" stroke="#2D2D2D"/>
+                </svg>
+            
+<a href="#">Bəyəndiklərim</a>                
+        </div>
+
+
+        <div class="mobile-account-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.397 14.0699L21.3999 14.069L18.3038 7.31374L19.0547 6.94005L18.7737 6.37748L18.0417 6.74205L17.9427 6.52614C17.8703 6.36836 17.6838 6.2991 17.526 6.37143C17.4576 6.40282 17.4027 6.4577 17.3713 6.52614L17.283 6.71911C16.7503 6.47169 16.1701 6.3433 15.5827 6.34291H12.9427V5.71433H13.5713V5.08576H13.031L13.257 4.18156C13.4305 3.48726 13.0083 2.78377 12.314 2.61025C11.6197 2.43676 10.9163 2.85893 10.7427 3.55323C10.6912 3.75948 10.6912 3.97527 10.7427 4.18152L10.9687 5.08572H10.4284V5.7143H11.057V6.34287H8.41859C7.83064 6.34334 7.24984 6.47204 6.71673 6.72001L6.62841 6.52704C6.55609 6.36927 6.36952 6.30001 6.21175 6.37233C6.14331 6.40372 6.08843 6.4586 6.05704 6.52704L5.95804 6.74295L5.22607 6.37681L4.9451 6.94001L5.69593 7.31527L2.59989 14.069C2.5808 14.1101 2.57106 14.1548 2.57129 14.2001C2.57267 15.4145 3.55686 16.3987 4.7713 16.4001H7.91416C9.1286 16.3987 10.1128 15.4145 10.1142 14.2001C10.1134 14.1549 10.1026 14.1105 10.0827 14.0699L6.97821 7.28922C7.42949 7.07975 7.92107 6.97132 8.41859 6.97148H11.057V18.4699L9.98405 19.5429H8.85702C7.98959 19.5439 7.28661 20.2469 7.28558 21.1144C7.28558 21.2879 7.42631 21.4286 7.59987 21.4286H16.3999C16.5734 21.4286 16.7142 21.2879 16.7142 21.1144C16.7131 20.2469 16.0102 19.5439 15.1427 19.5429H14.0157L12.9427 18.4699V6.97148H15.5827C16.0803 6.97132 16.5718 7.07975 17.0231 7.28922L13.9142 14.069C13.8951 14.1101 13.8854 14.1548 13.8856 14.2001C13.887 15.4145 14.8712 16.3987 16.0856 16.4001H19.2285C20.4429 16.3987 21.4271 15.4145 21.4285 14.2001C21.4277 14.1549 21.417 14.1105 21.397 14.0699ZM7.91416 15.7715H4.7713C4.02479 15.7707 3.38156 15.2456 3.23129 14.5143H9.45416C9.30393 15.2456 8.66067 15.7707 7.91416 15.7715ZM9.31022 13.8858H3.37524L6.26227 7.58717C6.31499 7.60131 6.37046 7.60131 6.42318 7.58717L9.31022 13.8858ZM11.4741 3.4565C11.7188 3.1661 12.1527 3.12914 12.4431 3.37389C12.4729 3.39903 12.5005 3.42669 12.5257 3.4565C12.6528 3.6182 12.6977 3.82972 12.6473 4.02913L12.383 5.08576H11.6168L11.3524 4.02913C11.302 3.82972 11.347 3.6182 11.4741 3.4565ZM11.6856 6.34291V5.71433H12.3142V6.34291H11.6856ZM12.3142 6.97148V18.2858H11.6856V6.97148H12.3142ZM15.1427 20.1715C15.5422 20.172 15.8982 20.4236 16.0319 20.8001H7.9679C8.10159 20.4236 8.45756 20.172 8.85702 20.1715H15.1427ZM13.1269 19.5429H10.8728L11.5014 18.9144H12.4983L13.1269 19.5429ZM17.5759 7.58811C17.6278 7.60638 17.6848 7.60402 17.735 7.58151L20.6245 13.8858H14.6895L17.5759 7.58811ZM19.2285 15.7715H16.0856C15.3391 15.7707 14.6959 15.2456 14.5456 14.5143H20.7685C20.6182 15.2456 19.975 15.7707 19.2285 15.7715Z" fill="#2D2D2D"/>
+                </svg>
+                
+<a href="#">Müqayisə</a>                
+        </div>
+
+
+
+        <div class="mobile-account-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 12C20 8.22876 20 6.34315 18.8284 5.17157C17.6569 4 15.7712 4 12 4V4C8.22876 4 6.34315 4 5.17157 5.17157C4 6.34315 4 8.22876 4 12V18C4 18.9428 4 19.4142 4.29289 19.7071C4.58579 20 5.05719 20 6 20H12C15.7712 20 17.6569 20 18.8284 18.8284C20 17.6569 20 15.7712 20 12V12Z" stroke="#2D2D2D"/>
+                <path d="M9 12L15 12" stroke="#2D2D2D" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 9L12 15" stroke="#2D2D2D" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+<a href="#">Bizə yazın</a>                
+        </div>
+
+
+        <div class="mobile-account-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 12C20 8.22876 20 6.34315 18.8284 5.17157C17.6569 4 15.7712 4 12 4V4C8.22876 4 6.34315 4 5.17157 5.17157C4 6.34315 4 8.22876 4 12V18C4 18.9428 4 19.4142 4.29289 19.7071C4.58579 20 5.05719 20 6 20H12C15.7712 20 17.6569 20 18.8284 18.8284C20 17.6569 20 15.7712 20 12V12Z" stroke="#2D2D2D"/>
+                <path d="M9 10L15 10" stroke="#2D2D2D" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 14H12" stroke="#2D2D2D" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+<a href="#">Rəylərim</a>                
+        </div>
+
+
+
+
+        <div class="mobile-account-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 12.5L2.60768 12.19L2.36276 12.5L2.60768 12.81L3 12.5ZM11 13C11.2761 13 11.5 12.7761 11.5 12.5C11.5 12.2239 11.2761 12 11 12V13ZM6.16324 7.69002L2.60768 12.19L3.39232 12.81L6.94787 8.30998L6.16324 7.69002ZM2.60768 12.81L6.16324 17.31L6.94787 16.69L3.39232 12.19L2.60768 12.81ZM3 13H11V12H3V13Z" fill="#2D2D2D"/>
+                <path d="M10.4759 18.7957L10.0948 19.1194L10.4759 18.7957ZM19.9425 19.7554L19.6187 19.3744L19.9425 19.7554ZM14.0311 4.14037L14.1118 4.63381L14.0311 4.14037ZM19.9425 4.24461L19.6187 4.62564L19.9425 4.24461ZM10.4759 5.20433L10.0948 4.88058L10.4759 5.20433ZM13.4348 4.74459L14.1118 4.63381L13.9503 3.64693L13.2733 3.75772L13.4348 4.74459ZM20.5 10.0616V13.9384H21.5V10.0616H20.5ZM14.1118 19.3662L13.4348 19.2554L13.2733 20.2423L13.9503 20.3531L14.1118 19.3662ZM10.5 8.51874V8.19865H9.5V8.51874H10.5ZM10.5 15.8013V15.6594H9.5V15.8013H10.5ZM13.4348 19.2554C12.6213 19.1223 12.0571 19.029 11.6342 18.9044C11.2246 18.7837 11.008 18.6497 10.8569 18.4719L10.0948 19.1194C10.4196 19.5017 10.8413 19.7133 11.3515 19.8636C11.8483 20.01 12.4852 20.1133 13.2733 20.2423L13.4348 19.2554ZM9.5 15.8013C9.5 16.5999 9.49909 17.2452 9.56335 17.7591C9.62934 18.2869 9.77003 18.7372 10.0948 19.1194L10.8569 18.4719C10.7058 18.2941 10.6086 18.0587 10.5556 17.635C10.5009 17.1975 10.5 16.6256 10.5 15.8013H9.5ZM20.5 13.9384C20.5 15.5931 20.4988 16.7806 20.3728 17.6694C20.2487 18.5442 20.0147 19.0379 19.6187 19.3744L20.2662 20.1364C20.9278 19.5743 21.2226 18.799 21.3629 17.8098C21.5012 16.8344 21.5 15.5626 21.5 13.9384H20.5ZM13.9503 20.3531C15.5532 20.6154 16.8081 20.8219 17.793 20.8429C18.792 20.8642 19.6047 20.6985 20.2662 20.1364L19.6187 19.3744C19.2228 19.7108 18.6978 19.862 17.8144 19.8431C16.9169 19.824 15.7448 19.6334 14.1118 19.3662L13.9503 20.3531ZM14.1118 4.63381C15.7448 4.36658 16.9169 4.17599 17.8144 4.15686C18.6978 4.13803 19.2228 4.28921 19.6187 4.62564L20.2662 3.86358C19.6047 3.30149 18.792 3.13579 17.793 3.15709C16.8081 3.17809 15.5532 3.38464 13.9503 3.64693L14.1118 4.63381ZM21.5 10.0616C21.5 8.43738 21.5012 7.16562 21.3629 6.19023C21.2226 5.20098 20.9278 4.42566 20.2662 3.86358L19.6187 4.62564C20.0147 4.96208 20.2487 5.45578 20.3728 6.33065C20.4988 7.21938 20.5 8.40686 20.5 10.0616H21.5ZM13.2733 3.75772C12.4852 3.88668 11.8483 3.98998 11.3515 4.13639C10.8413 4.28674 10.4196 4.49831 10.0948 4.88058L10.8569 5.52808C11.008 5.35028 11.2246 5.21629 11.6342 5.0956C12.0571 4.97095 12.6213 4.87771 13.4348 4.74459L13.2733 3.75772ZM10.5 8.19865C10.5 7.37437 10.5009 6.80252 10.5556 6.36499C10.6086 5.94133 10.7058 5.70587 10.8569 5.52808L10.0948 4.88058C9.77003 5.26285 9.62934 5.71314 9.56335 6.24091C9.49909 6.75482 9.5 7.4001 9.5 8.19865H10.5Z" fill="#2D2D2D"/>
+                </svg>
+
+<a href="#">Çıxış</a>                
+        </div>
+
+
+
+
+
+
+    </div>
+</div>
+
+
+
 
 
             <div class="mobile-menu-item">
-                <div id="part-left"><a href="#" class="mobile-menu-link">Telefonlar</a></div>
+                <div id="part-left"><a href="#" class="mobile-menu-link"><img src="img/mobile.png" alt="" srcset=""> Telefonlar</a></div>
                 
-                <div id="part-right"><svg id="svg" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div id="part-right"><svg  onclick="showSubdDiv(1)"id="svg" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7 7L7.35355 6.64645L7.70711 7L7.35355 7.35355L7 7ZM1.35355 0.646447L7.35355 6.64645L6.64645 7.35355L0.646446 1.35355L1.35355 0.646447ZM7.35355 7.35355L1.35355 13.3536L0.646447 12.6464L6.64645 6.64645L7.35355 7.35355Z" fill="#2D2D2D"/>
                     </svg>
                 
                 
-                    <div class="menu-item-subcategories">
+                    <div class="menu-item-subcategories" id="child1">
                         <div class="menu-item-subcategories-body">
                             
-                            <div class="signin-menu  sub-name" id="fuad">
-                                <div class="mobile-menu-left">
-                                    <svg  width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <div class="signin-menu  sub-name">
+                                <div class="mobile-menu-left-sub" >
+                                    <svg  onclick="hideSubDiv(1)"  width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1.5 8L1.14645 8.35355L0.792893 8L1.14645 7.64645L1.5 8ZM8.14645 15.3536L1.14645 8.35355L1.85355 7.64645L8.85355 14.6464L8.14645 15.3536ZM1.14645 7.64645L8.14645 0.646446L8.85355 1.35355L1.85355 8.35355L1.14645 7.64645Z" fill="#2D2D2D"/>
                                     </svg>
                                     
-                                    <span>Subkategoriya adı</span>
+                                    <span>Telefonlar</span>
                                     </div>
                                 <div class="mobile-menu-right">
                                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,12 +184,64 @@
                                         </svg>
                                         
                                     </div>
-                            </div>
 
-                            
+                            </div>
+                        
+                            <div class="mobile-menu-item">
+                                <div id="part-left"><a href="#" class="mobile-menu-link"><img src="img/mobile.png" alt="" >Iphone</a></div>
+                                
+                                <div id="part-right"><svg  onclick="showSubofSubdDiv(1)"id="svg" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 7L7.35355 6.64645L7.70711 7L7.35355 7.35355L7 7ZM1.35355 0.646447L7.35355 6.64645L6.64645 7.35355L0.646446 1.35355L1.35355 0.646447ZM7.35355 7.35355L1.35355 13.3536L0.646447 12.6464L6.64645 6.64645L7.35355 7.35355Z" fill="#2D2D2D"/>
+                                    </svg>
+                                
+                                
+                                    <div class="menu-item-subcategories" id="childof1">
+                                        <div class="menu-item-subcategories-body son">
+                                            
+                                            <div class="signin-menu  sub-name ">
+                                                <div class="mobile-menu-left-sub" >
+                                                    <svg  onclick="hideSubofSubDiv(1)"  width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.5 8L1.14645 8.35355L0.792893 8L1.14645 7.64645L1.5 8ZM8.14645 15.3536L1.14645 8.35355L1.85355 7.64645L8.85355 14.6464L8.14645 15.3536ZM1.14645 7.64645L8.14645 0.646446L8.85355 1.35355L1.85355 8.35355L1.14645 7.64645Z" fill="#2D2D2D"/>
+                                                    </svg>
+                                                    
+                                                    <span>Iphone</span>
+                                                    </div>
+
+                                                <div class="mobile-menu-right">
+                                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M22 6L6 22" stroke="#2D2D2D" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M6 6L22 22" stroke="#2D2D2D" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                        
+                                                    </div>
+                
+                                            </div>
+
+
+                                         <a href="#1"  class="a-finish">Iphone XS</a>
+                                         <a href="#2" class="a-finish">Iphone 13</a>
+                                        <a href="#3"  class="a-finish">Iphone 14</a>
+                                                
+                                              
+                                               
+                                
+                                         
+
+                                            
+                
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                
+                            </div>
+                
+                
 
                         </div>
                     </div>
+
+
                 </div>
                
 
@@ -80,171 +251,145 @@
 
 
 
-            <div class="mobile-menu-item">
-                <div id="part-left"><a href="#" class="mobile-menu-link">Telefonlar 2</a></div>
-                
-                <div id="part-right"><svg id="svg" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7 7L7.35355 6.64645L7.70711 7L7.35355 7.35355L7 7ZM1.35355 0.646447L7.35355 6.64645L6.64645 7.35355L0.646446 1.35355L1.35355 0.646447ZM7.35355 7.35355L1.35355 13.3536L0.646447 12.6464L6.64645 6.64645L7.35355 7.35355Z" fill="#2D2D2D"/>
-                    </svg>
-                
-                
-                    <div class="menu-item-subcategories">
-                        <div class="menu-item-subcategories-body">
-                            
-                            <div class="signin-menu  sub-name" id="fuad">
-                                <div class="mobile-menu-left">
-                                    <svg  width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.5 8L1.14645 8.35355L0.792893 8L1.14645 7.64645L1.5 8ZM8.14645 15.3536L1.14645 8.35355L1.85355 7.64645L8.85355 14.6464L8.14645 15.3536ZM1.14645 7.64645L8.14645 0.646446L8.85355 1.35355L1.85355 8.35355L1.14645 7.64645Z" fill="#2D2D2D"/>
-                                    </svg>
-                                    
-                                    <span>Subkategoriya adı 2</span>
-                                    </div>
-                                <div class="mobile-menu-right">
-                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M22 6L6 22" stroke="#2D2D2D" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M6 6L22 22" stroke="#2D2D2D" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        
-                                    </div>
-                            </div>
 
-                            
-
-                        </div>
-                    </div>
-                </div>
-               
-
-            </div>
-
-
-
-
-            <div class="mobile-menu-item">
-                <div id="part-left"><a href="#" class="mobile-menu-link">Telefonlar 3</a></div>
-                
-                <div id="part-right"><svg id="svg" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7 7L7.35355 6.64645L7.70711 7L7.35355 7.35355L7 7ZM1.35355 0.646447L7.35355 6.64645L6.64645 7.35355L0.646446 1.35355L1.35355 0.646447ZM7.35355 7.35355L1.35355 13.3536L0.646447 12.6464L6.64645 6.64645L7.35355 7.35355Z" fill="#2D2D2D"/>
-                    </svg>
-                
-                
-                    <div class="menu-item-subcategories">
-                        <div class="menu-item-subcategories-body">
-                            
-                            <div class="signin-menu  sub-name" id="fuad">
-                                <div class="mobile-menu-left">
-                                    <svg  width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.5 8L1.14645 8.35355L0.792893 8L1.14645 7.64645L1.5 8ZM8.14645 15.3536L1.14645 8.35355L1.85355 7.64645L8.85355 14.6464L8.14645 15.3536ZM1.14645 7.64645L8.14645 0.646446L8.85355 1.35355L1.85355 8.35355L1.14645 7.64645Z" fill="#2D2D2D"/>
-                                    </svg>
-                                    
-                                    <span>Subkategoriya adı 3</span>
-                                    </div>
-                                <div class="mobile-menu-right">
-                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M22 6L6 22" stroke="#2D2D2D" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M6 6L22 22" stroke="#2D2D2D" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        
-                                    </div>
-                            </div>
-
-                            
-
-                        </div>
-                    </div>
-                </div>
-               
-
-            </div>
-
-
-            <div class="mobile-menu-item">
-                <div id="part-left"><a href="#" class="mobile-menu-link">Telefonlar 4</a></div>
-                
-                <div id="part-right"><svg id="svg" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7 7L7.35355 6.64645L7.70711 7L7.35355 7.35355L7 7ZM1.35355 0.646447L7.35355 6.64645L6.64645 7.35355L0.646446 1.35355L1.35355 0.646447ZM7.35355 7.35355L1.35355 13.3536L0.646447 12.6464L6.64645 6.64645L7.35355 7.35355Z" fill="#2D2D2D"/>
-                    </svg>
-                
-                
-                    <div class="menu-item-subcategories">
-                        <div class="menu-item-subcategories-body">
-                            
-                            <div class="signin-menu  sub-name" id="fuad">
-                                <div class="mobile-menu-left">
-                                    <svg  width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.5 8L1.14645 8.35355L0.792893 8L1.14645 7.64645L1.5 8ZM8.14645 15.3536L1.14645 8.35355L1.85355 7.64645L8.85355 14.6464L8.14645 15.3536ZM1.14645 7.64645L8.14645 0.646446L8.85355 1.35355L1.85355 8.35355L1.14645 7.64645Z" fill="#2D2D2D"/>
-                                    </svg>
-                                    
-                                    <span>Subkategoriya adı 4</span>
-                                    </div>
-                                <div class="mobile-menu-right">
-                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M22 6L6 22" stroke="#2D2D2D" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M6 6L22 22" stroke="#2D2D2D" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        
-                                    </div>
-                            </div>
-
-                            
-
-                        </div>
-                    </div>
-                </div>
-               
-
-            </div>
 
 
 
         </div>
     </div>
+
+
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script>
 
 
+function hideAccountDiv(){
+    document.querySelector(".account-links-list").style="transform:translateX(-100%)"
+
+}
+function showAccountDiv(){
+    document.querySelector(".account-links-list").style="transform:translateX(0%)"
+
+}
+
+function showSubdDiv(index){
+    console.log("secildi")
+document.querySelector(`#child${index}`).style="transform:translateX(0%)"
+
+}
+
+function showSubofSubdDiv(index){
+    console.log("secildi")
+document.querySelector(`#childof${index}`).style="transform:translateX(0%)"
+
+}
+function showSubofSubofSubdDiv(index){
+    console.log("secildi")
+document.querySelector(`#childofchildof${index}`).style="transform:translateX(0%)"
+
+}
+
+
+function hideSubDiv(index){
+    console.log("baglandi")
+document.querySelector(`#child${index}`).style="transform:translateX(-100%)"
+
+
+}
+
+function hideSubofSubDiv(index){
+    console.log("baglandi")
+document.querySelector(`#childof${index}`).style="transform:translateX(-100%)"
+
+
+}
+
+function hideSubofSubofSubDiv(index){
+    console.log("baglandi")
+document.querySelector(`#childofchildof${index}`).style="transform:translateX(-100%)"
+
+
+}
+
+
 $(document).ready(()=>{
 
 $(".mobile-menu-right").click(()=>{
-    $(".mobile-menu").css("display","none")
+    $(".mobile-menu").css("transform","translateX(-100%)")
+   
+    $(".menu-item-subcategories").css("transform","translateX(-100%)")
+
+    $(".account-links-list").css("transform","translateX(-100%)")
+
+
 })
+
+
+
+$(".a-finish").click(()=>{
+    $(".mobile-menu").css("transform","translateX(-100%)")
+   
+    $(".menu-item-subcategories").css("transform","translateX(-100%)")
+    $(".account-links-list").css("transform","translateX(-100%)")
+
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+// $(".mobile-menu-right").click(()=>{
+//     $(".mobile-menu").css("transform","translateX(-100%)")
+// })
 
 $("#menu").click(()=>{
-    $(".mobile-menu").css("display","block")
+    $(".mobile-menu").css("transform","translateX(0%)")
 })
 
 
 
 
-$("#menu2").click(()=>{
-    $(".menu-item-subcategories").css("display","block")
-})
+// $("#menu2").click(()=>{
+//     $(".menu-item-subcategories").css("transform","translateX(0%)")
+// })
 
 
 
-    $("#part-right").click(()=>{
-        $("#part-right > .menu-item-subcategories").css("display","block")
+//     $("#part-right").click(()=>{
+//         $("#part-right > .menu-item-subcategories").css("transform","translateX(0%)")
 
 
-})
-
-
-
-
-
-$(".mobile-menu-left").click(()=>{
- $(".menu-item-subcategories").css("visibility","none")
-})
+// })
 
 
 
 
 
+// $(".mobile-menu-left").click(()=>{
+//  $(".menu-item-subcategories").css("visibility","none")
+// })
 
-    $(".sub-name").click(()=>{
+
+
+
+
+
+//     $(".sub-name").click(()=>{
  
-    $(".menu-item-subcategories").css("display","none")})
+//     $(".menu-item-subcategories").css("transform","translateX(-100%)")})
 
   
 })
