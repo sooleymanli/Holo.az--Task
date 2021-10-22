@@ -1,21 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
-    width: 100%;
+    width: 60%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #E5E5E5;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
 
 .col{
     width: 280px;
+    margin-left: 20px;
+    margin-top: 20px;
   
 }
 .product-item{
@@ -149,7 +156,7 @@ animation: fadeInDown 1s;
    .product-item:hover img#productImg{
        width: 180px;
        height: 180px;
-       transition: 0.2s all ease-in-out;
+       transition: s all ease-in-out;
        cursor: pointer;
    }
    .product-item:hover .product-delivery{
