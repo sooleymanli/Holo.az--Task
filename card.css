@@ -50,11 +50,12 @@ margin-top: 33px;
    transition: 0.3s all ease-in-out;
 
     }
-.product-item .product-item-body .product-item-name span{
+.product-item .product-item-body .product-item-name a {
 font-weight: bold;
 font-size: 18px;
 line-height: 140%;
 color: #2D2D2D;
+text-decoration: none;
 }
 
 
