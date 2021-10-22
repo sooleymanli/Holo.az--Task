@@ -162,7 +162,6 @@ animation: fadeInDown 1s;
        width: 100%;
        display: flex;
        justify-content: center;
-       border-top: 1px solid #F2F2F2;
        margin-top: 10px;
        display: none;
        animation: fadeInUp 1s ;
@@ -197,6 +196,7 @@ height: 42px;
     justify-content: center;
     align-items: center;
   margin-left: 15px;
+  border-top: none;
 } 
 .product-order .right span{
     width: 43px;
